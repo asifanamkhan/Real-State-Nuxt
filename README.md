@@ -1,5 +1,3 @@
-# sheanch-home-frontend
-
 ## Build Setup
 
 ```bash
