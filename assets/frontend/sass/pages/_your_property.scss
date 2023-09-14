@@ -1,0 +1,60 @@
+#u-property-hero {
+  position: relative;
+  //height: 556px;
+  padding: 0;
+  background-position: center;
+  box-sizing: border-box;
+
+  .p-order {
+    order: 1;
+
+    @media (max-width: 768px) {
+      order: 2;
+      margin-bottom: 10px;
+    }
+  }
+
+  .heading-title {
+    @media (max-width: 768px) {
+      font-size: 32px;
+    }
+  }
+
+  .lead {
+    @media (max-width: 768px) {
+      font-size: 1rem;
+    }
+  }
+}
+
+#customer-experiences {
+  .customer-video {
+    iframe {
+      border-radius: 10px;
+    }
+  }
+}
+
+#faq {
+  background-color: #f5faff;
+}
+
+#about-property {
+  .y-property-card {
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 2px 10px 10px 0px rgb(229 212 212 / 75%);
+
+    img {
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+    }
+  }
+
+  .card-footer {
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
+  }
+}

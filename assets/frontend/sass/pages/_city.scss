@@ -1,0 +1,216 @@
+.page-title {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
+  background-position: center;
+
+  .shadow-hard {
+    box-shadow: 0 10px 12px rgba(77, 60, 160, .1);
+  }
+
+  .hero-search-radius {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 40px;
+    border-radius: 0.3rem;
+    padding: 16px;
+
+    @media (max-width: 768px) {
+      margin: 20px;
+    }
+  }
+
+  .full-search-2 {
+    .form-group {
+      height: 100%;
+      margin-bottom: 0;
+    }
+
+    .property-type {
+      height: 100%;
+      position: relative;
+      width: 100%;
+
+      ul {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        justify-content: flex-start;
+        margin: 0;
+        padding: 0;
+
+        li {
+          color: #39466d;
+          display: inline-block;
+          flex: inherit;
+          font-weight: 600;
+
+          label {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            margin: 5px;
+            color: #455892;
+            font-family: $font-heading;
+            font-size: 14px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
+    .input-icon {
+      position: relative;
+      width: 100%;
+
+      .form-control-custom {
+        background: #fff;
+        border: none;
+        border-radius: 3px;
+        box-shadow: none;
+        height: 55px;
+        padding-left: 55px;
+      }
+
+      svg {
+        cursor: normal;
+        left: 15px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 22px;
+      }
+    }
+
+    .black {
+      background: #1a2340 !important;
+    }
+
+    .search-btn {
+      background: #fd5332;
+      border-radius: 5px;
+      box-shadow: 0 5px 24px rgb(31 37 59 / 15%);
+      color: #fff;
+      font-size: 1.2rem;
+      padding: 12px;
+      width: 100%;
+    }
+  }
+}
+
+.shorting-box {
+  align-items: center;
+  display: flex;
+  margin-bottom: 1.5rem;
+  width: 100%;
+
+  &-item {
+    flex: 1;
+  }
+
+  &-right {
+    align-items: center;
+    display: flex;
+
+    .sorting-by {
+      width: 200px;
+      display: inline-flex;
+      margin-right: 15px;
+
+      select {
+        height: 56px;
+        background-color: $white;
+        border: 1px solid #e6eaf3;
+        border-radius: 6px;
+        padding-left: 15px;
+      }
+    }
+
+    .sorting-list {
+      display: block;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        list-style: none;
+        margin-right: 10px;
+
+        a {
+          align-items: center;
+          background-color: $white;
+          border: 1px solid #e1e9ec;
+          border-radius: 4px;
+          display: inline-flex;
+          height: 56px;
+          justify-content: center;
+          transition: all .4s ease;
+          width: 56px;
+
+          svg {
+            font-size: 18px;
+          }
+
+          &:hover {
+            align-items: center;
+            background: rgba(25, 206, 109, .1);
+            border: 1px solid #19ce6d;
+            border-radius: 4px;
+            color: #19ce6d;
+            display: inline-flex;
+            height: 56px;
+            justify-content: center;
+            width: 56px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.city-list {
+  .place-layout-listing {
+    &.property-1 {
+      display: flex;
+      margin: 0 0 30px;
+
+      .place-layout-listing-img {
+        border-radius: 3px 0 0 3px;
+        flex: 2;
+        height: 0;
+        min-height: 210px;
+        overflow: hidden;
+
+        a {
+          min-height: 210px;
+        }
+
+        img {
+          height: 210px;
+          object-fit: cover;
+        }
+      }
+
+      .place-layout-listing-content {
+        flex: 3;
+        position: relative;
+      }
+
+      .place-layout-listing-features {
+        padding: 0;
+      }
+
+      .place-layout-listing-detail {
+        padding: 0.5rem 1rem;
+      }
+
+      .place-layout-listing-footer {
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+}

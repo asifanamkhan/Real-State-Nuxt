@@ -1,0 +1,18 @@
+.form-control {
+  &.custom-input-control {
+    background: #f6f8fd;
+    border: 1px solid #edf0f9;
+    box-shadow: none;
+    border-radius: 5px;
+    height: 40px;
+    overflow: hidden;
+    padding-left: 10px;
+    resize: none;
+  }
+}
+
+textarea {
+  &.custom-input-control {
+    height: auto !important;
+  }
+}

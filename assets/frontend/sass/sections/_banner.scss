@@ -1,0 +1,28 @@
+.banner {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 620px;
+
+  &-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px 20px;
+    border-left: 5px solid #1266e3;
+    opacity: 0.7;
+  }
+
+  &-title {
+    color: #fff;
+    font-size: 4rem;
+  }
+
+  &-text {
+    color: #fff;
+    font-size: 1.6rem;
+  }
+
+  .btn-lg, .btn-group-lg > .btn {
+    padding: 5px 0;
+  }
+}

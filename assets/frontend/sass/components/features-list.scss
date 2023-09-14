@@ -1,0 +1,32 @@
+.features-list {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+
+    &-icon {
+        color: #616e96;
+        align-items: center;
+        display: inline-flex;
+        flex: inherit;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 0;
+        margin-right: 1.2rem;
+        position: relative;
+        width: auto;
+
+        .fleat-icon {
+            align-items: center;
+            background: #edf1f9;
+            border-radius: 50%;
+            display: inline-flex;
+            height: 25px;
+            justify-content: center;
+            margin-right: 7px;
+            width: 25px;
+        }
+    }
+}

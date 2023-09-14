@@ -1,0 +1,60 @@
+#location {
+    .location-property,
+    .location-property-img {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .location-property:focus
+    .location-property-img img,
+    .location-property:hover
+    .location-property-img img {
+        transform: scale(1.5);
+    }
+
+    .location-property {
+        background: $white;
+        border: 1px solid #e2e6f1;
+        border-radius: 8px;
+        display: block;
+        margin-bottom: 30px;
+        transition: all .4s ease;
+        width: 100%;
+
+        &-img {
+            img {
+                transition: all .4s ease;
+            }
+        }
+
+        &-content {
+            align-items: center;
+            display: flex;
+            padding: 1.5rem 1rem;
+            width: 100%;
+
+            .content-flex {
+                flex: 1;
+
+                &-title {
+                    font-size: 17px;
+                    margin-bottom: 0;
+                }
+            }
+
+            .content-right {
+                &-view {
+                    align-items: center;
+                    background: #0fca98;
+                    border-radius: 50%;
+                    color: #fff;
+                    display: inline-flex;
+                    height: 40px;
+                    justify-content: center;
+                    transition: all .4s ease;
+                    width: 40px;
+                }
+            }
+        }
+    }
+}

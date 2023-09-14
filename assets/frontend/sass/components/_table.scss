@@ -1,0 +1,23 @@
+table {
+  @media (max-width: 992px) {
+    width: 1000px !important;
+  }
+}
+
+.search,
+.card-topbar {
+  @media (max-width: 992px) {
+    width: 970px !important;
+  }
+}
+
+.card {
+  @media (max-width: 992px) {
+    overflow: overlay !important;
+  }
+}
+
+.table th,
+.table td {
+  padding: 4px;
+}

@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+// Colors
+$primary-color: #2b4db9;
+$body-color: #212529;
+$body-bg: #fff;
+$blue: #0d6efd;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #d63384;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #198754;
+$teal: #20c997;
+$cyan: #0dcaf0;
+$white: #fff;
+$gray: #6c757d;
+$gray-dark: #343a40;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$primary: #0d6efd;
+$secondary: #6c757d;
+$success: #198754;
+$info: #0dcaf0;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: #212529;
+
+// RGB
+$primary-rgb: 13, 110, 253;
+$secondary-rgb: 108, 117, 125;
+$success-rgb: 25, 135, 84;
+$info-rgb: 13, 202, 240;
+$warning-rgb: 255, 193, 7;
+$danger-rgb: 220, 53, 69;
+$light-rgb: 248, 249, 250;
+$dark-rgb: 33, 37, 41;
+$white-rgb: 255, 255, 255;
+$black-rgb: 0, 0, 0;
+$body-rgb: 33, 37, 41;
+
+$top-bar: #431C6B;
+
+// Font Style
+$font-body: 'Nunito Sans', sans-serif;
+$font-heading: 'Nunito Sans', sans-serif;
+
+body {
+  background: $white;
+  color: #4e5c79;
+  font-family: $font-body;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  overflow-x: hidden !important;
+}
+
+#fix-container {
+  position: fixed;
+  right: 5px;
+  top: 100px;
+  z-index: 9999999;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #2d3954;
+  font-family: $font-heading;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+a {
+  background-color: transparent;
+  color: #2d3954;
+  text-decoration: none !important;
+}
+
+.text-13 {
+  font-size: 13px;
+}
+
+.image-cover {
+  background-position: 50% !important;
+  background-size: cover !important;
+}
+
+section {
+  padding: 80px 0;
+
+  .section-heading {
+    margin-bottom: 2rem;
+
+    p {
+      line-height: 1.7;
+      margin-bottom: 5px;
+    }
+  }
+
+  .center {
+    text-align: center;
+  }
+}
+
+.card-price {
+  color: #08184b;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  padding-left: 0.35em;
+  position: relative;
+}
+
+.btn {
+  &.btn-browse-more {
+    background: rgba(15, 202, 152, .2) !important;
+    border: 2px solid rgba(15, 202, 152, .3) !important;
+    color: #0fca98 !important;
+    padding: 16px 50px;
+    border-radius: .25rem !important;
+  }
+
+  &.btn-height {
+    padding: 8px 46px;
+  }
+}
+
+.bg-gary {
+  background: #f3f7fd !important;
+}
+
+.ht-80 {
+  height: 180px !important;
+}
+
+.b-r {
+  border-right: 1px solid #e0ecf5 !important;
+}
+
+.social-button {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  .social-button-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    color: $white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-color: transparent;
+
+    i {
+      font-size: 30px;
+    }
+
+    &.facebook {
+      background: #3b5998;
+    }
+
+    &.gmail {
+      background: #d7d7d7;
+    }
+  }
+}
+
+.border-radius-none {
+  border-radius: 0 !important;
+}
+
+.button-reload {
+  background: #36c6d3;
+  border-color: #36c6d3;
+  color: #fff !important;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 5px 10px;
+
+  &:hover {
+    background: #1dc3d2;
+    border-color: #1dc3d2;
+  }
+}
+
+@import "components/input";

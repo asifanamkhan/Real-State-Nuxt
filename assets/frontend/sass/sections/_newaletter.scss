@@ -1,0 +1,38 @@
+#newsletter {
+    background: #1266e3;
+    padding: 35px 0 !important;
+
+    .newsletter-body {
+        align-items: center;
+        color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+        @media (max-width: 768px) {
+            justify-content: center;
+        }
+
+        &-head {
+            flex: 1;
+
+            h3 {
+                color: #fff;
+                margin-bottom: 5px;
+            }
+
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
+
+        .btn.newsletter-btn {
+            background: $white;
+            border-radius: 50px;
+            box-shadow: 0 0 0 5px hsl(0deg 0% 100% / 20%);
+            color: #333640;
+            font-weight: 600;
+            padding: 18px 40px;
+        }
+    }
+}

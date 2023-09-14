@@ -1,0 +1,72 @@
+.auth-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: $white;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: .3rem;
+  outline: 0;
+
+  &-body {
+    padding: 2.5em 3em;
+    position: relative;
+    flex: 1 1 auto;
+
+    .form-group {
+      .col-form-label {
+        color: #455892;
+        font-family: $font-heading;
+        font-size: 15px;
+        font-weight: 600;
+      }
+
+      .input-with-icon {
+        position: relative;
+        width: 100%;
+
+        .form-control {
+          background: #f6f8fd;
+          border: 1px solid #edf0f9;
+          box-shadow: none;
+          border-radius: 5px;
+          height: 60px;
+          overflow: hidden;
+          padding-left: 45px;
+        }
+
+        svg {
+          left: 15px;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          color: #a2a9bf;
+          font-size: 20px;
+        }
+      }
+    }
+
+    .auth-divider {
+      margin: 20px 0;
+      position: relative;
+      text-align: center;
+
+      span {
+        background: #fff;
+        padding: 0 20px;
+        position: relative;
+      }
+
+      &:before {
+        border: 1px solid #e1e5f2;
+        content: '';
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 50%;
+      }
+    }
+  }
+}
